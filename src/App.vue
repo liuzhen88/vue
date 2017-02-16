@@ -1,18 +1,48 @@
 <template>
-    <div id="apps">
-        <router-view></router-view>
+    <div id="app">
+    	<headerTitle></headerTitle>
+    	<div class="meun-list-left">
+    		<meun></meun>
+    	</div>
+    	<div class="meun-list-right">
+        	<router-view></router-view>
+    	</div>
     </div>
 </template>
 
 <script>
-import Test from './components/test';
-import Headers from './components/header';
+import HeaderTitle from './components/header';
+import Meun from './components/meun';
 
 export default {
-    name:'appss',
-    components: {
-        Test,
-        Headers
-    }
+	name:'app',
+	components:{
+		HeaderTitle,
+		Meun
+	}
 }
 </script>
+
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+.meun-list-left{
+	width: 180px;
+	min-height: 1000px;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 44px;
+	background: #404040;
+	display: block;
+}
+.meun-list-right{    
+    position: absolute;
+    left: 190px;
+   	top: 44px;
+   	right: 0;
+}
+</style>
