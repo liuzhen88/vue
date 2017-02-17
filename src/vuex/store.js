@@ -1,24 +1,17 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import state from './state';
+import mutations from './mutations';
+import actions from './actions';
+import getters from './getters';
 
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
-	state:{
-		lss:'Tom',
-		count:1,
-		title:'合绳日明细报表'
-	},
-	mutations:{
-		add(state){
-			state.count++;
-		}
-	},
-	actions:{
-		add(context){
-			context.commit('add');
-		}
-	}
+	state,
+	mutations,
+	actions,
+	getters
 });
 
 export default store;

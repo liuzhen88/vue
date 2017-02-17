@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="day-chart-title">
-			{{ title }}
+			{{ $store.state.title }}
 		</div>
 	</div>
 </template>
@@ -24,11 +24,6 @@
 
 <script>
 export default {
-	name:'header',
-	data(){
-		return {
-			title:this.$store.state.title
-		}
-	}
+	name:'header'
 }
 </script>

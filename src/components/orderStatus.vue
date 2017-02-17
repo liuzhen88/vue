@@ -2,23 +2,24 @@
 	<div>
 		<div>订单状态表</div>
 		<button @click="increment">click me</button>
-		<div>{{ count }}</div>
+		<div>{{ $store.state.count }}</div>
 	</div>
 </template>
 
 <script>
+import config from '../config';
 export default {
 	name:'orderStatus',
-	data(){
-		return {
-			count:this.$store.state.count
-		}
-	},
 	methods:{
 		increment(){
 			this.$store.dispatch('add');
-			this.count = this.$store.state.count;
+		},
+		changeTitle(){
+			this.$store.dispatch('changeTitle',config.tableName.orderStatus);
 		}
+	},
+	created(){
+		this.changeTitle();
 	}
 }
 </script>

@@ -3,8 +3,17 @@
 </template>
 
 <script>
+import config from '../config';
 export default {
-	name:'store'
+	name:'store',
+	methods:{
+		changeTitle(){
+			this.$store.dispatch('changeTitle',config.tableName.store);
+		}
+	},
+	created(){
+		this.changeTitle();
+	}
 }
 </script>
 
