@@ -45,4 +45,28 @@ export default {
    	top: 44px;
    	right: 0;
 }
+.time-container{
+	padding: 10px;
+}
+.selection{
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #666;
+}
+#search{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+.select{
+	width: 100px;
+	height: 25px;
+	border:solid #d9d9d9 1px;
+	border-radius: 4px;
+	font-size: 12px;
+	color: #666;
+}
 </style>

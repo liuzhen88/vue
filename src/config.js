@@ -7,7 +7,8 @@ let config = {
 		dayUnqualify:'日不合格品统计表',
 		workerPerformance:'工人绩效表',
 		productReport:'生产量报表'
-	}
+	},
+	serverUrl:'http://120.25.69.229:3000/swgl/user'
 }
 
 module.exports = config;

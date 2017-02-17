@@ -1,9 +1,9 @@
 const actions = {
-	add(context){
-		context.commit('add');
-	},
 	changeTitle(context, title){
 		context.commit('changeTitle', title);
+	},
+	selectDetail(context, data){
+		context.commit('selectMutation', data);
 	}
 }
 
