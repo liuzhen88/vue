@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import config from '../config';
 export default {
 	name:'meun',
 	data (){
@@ -18,31 +19,31 @@ export default {
 			meunList:[
 				{
 					path:'orderStatus',
-					name:'订单状态表'
+					name:config.tableName.orderStatus
 				},
 				{
 					path:'store',
-					name:'存量动态表'
+					name:config.tableName.store
 				},
 				{
 					path:'dayTable',
-					name:'日明细报表'
+					name:config.tableName.dayTable
 				},
 				{
 					path:'summaryTable',
-					name:'日汇总表'
+					name:config.tableName.summaryTable
 				},
 				{
 					path:'dayUnqualify',
-					name:'日不合格品统计表'
+					name:config.tableName.dayUnqualify
 				},
 				{
 					path:'workerPerformance',
-					name:'工人绩效表'
+					name:config.tableName.workerPerformance
 				},
 				{
 					path:'productReport',
-					name:'生产量报表'
+					name:config.tableName.productReport
 				}
 			]
 		}
