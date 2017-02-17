@@ -50,6 +50,9 @@ export default {
 				jsonp:'callback',
 				success:function(data){
 					cb(data);
+				},
+				error:function(err){
+					alert('请登录');
 				}
 			});
 		}
