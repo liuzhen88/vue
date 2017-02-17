@@ -1,7 +1,7 @@
 <template>
 	<ul class="meun-container">
 		<li class="meun-list" v-for="item in meunList">
-			<router-link :to="{
+			<router-link active-class='active-router' :to="{
 				path:item.path
 			}">
 				{{ item.name }}				
@@ -72,5 +72,8 @@ a{
 	display: inline-block;
 	width: 100%;
 	height: 100%;
+}
+.active-router{
+	color: #fff;
 }
 </style>
